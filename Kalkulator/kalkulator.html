@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator sederhana</title>
+</head>
+<body>
+    <form action="proses_hitung.php" id = "form_text" name = "form_text" method="post">
+        <table width = "400" cellspacing = "0" cellpading = "3">
+            <tr>
+                <td>Angka 1</td>
+                <td>: <input type = "text" name = "angka1"></td>        
+            </tr>
+            <tr>
+                <td>Operator</td>
+                <td><input type="radio" name = "operator" value = "tambah"> +
+                <input type="radio" name = "operator" value = "kurang"> -
+                <input type="radio" name = "operator" value = "kali"> *
+                <input type="radio" name = "operator" value = "bagi"> /
+                <input type="radio" name = "operator" value = "modulus"> % </td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>: <input type="text" name = "angka2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><br><input type="submit" value="Hitung" name = "Hitung">
+                <input type="reset" value="reset" name = "reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

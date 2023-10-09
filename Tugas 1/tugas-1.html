@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+            background-color: grey;
+            display: flex;
+            top: 50px;
+            justify-content: center;
+        }
+        .container{
+            width: 620px;
+            height: 620px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .5);    
+        }
+        .back{
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 575px;
+            height: 575px;
+            background-color: rgba(20, 20, 255, .5);
+        }
+        .sett{
+            color: white;
+            padding: 100px;
+        }
+        input{
+            margin: 15px 10px;
+        }
+        select{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .box1{
+            margin-left: 20px;
+        }
+        textarea{
+            margin-top: 10px;
+            width: 300px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form action = "tugas-1_proses.php" method = "post">
+        <div class="container">
+            <div class="back">
+                <div class="sett">
+                    <p>Data Diri</p>
+                    <hr>
+                    <p>Nama<input type="text" name = "nama" class = "box"></p>
+                    <p>Nim<input type="text" name = "nim" class = "box1"></p>
+                    <p>Jenis Kelamin</p>
+                    <hr>
+                    <input type="radio" name="jenis_kelamin" value="laki-laki">Laki-laki
+			<input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+                    <p>Keahlian</p>
+                    <hr>
+                    <p><input type="checkbox" name = "web" value = "Web">Web
+                    <input type="checkbox" name="java" value = "Java">Java
+                    <input type="checkbox" name="mobile" value = "Mobile">Mobile</p>
+                    <p>Program Studi</p>
+                    <hr>
+                    <select name="program">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi Kota Cerdas">Sistem Informasi Kota Cerdas</option>
+                        <option value="Teknik Listrik">Teknik Listrik</option>
+                    </select>
+                    <p>Tentang</p>
+                    <hr>
+                    <textarea name="tentang"></textarea>
+                    <br>
+                    <input type="submit" name = "ok"value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </div>    
+    </form>
+</body>
+</html>
